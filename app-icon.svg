@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Dark Studio Charcoal Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1c22"/>
+      <stop offset="100%" stop-color="#111216"/>
+    </linearGradient>
+
+    <!-- Electric Indigo Gradient for F -->
+    <linearGradient id="fGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6066FA"/>
+      <stop offset="100%" stop-color="#4F55EE"/>
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <!-- Subtle Inset Highlight Border -->
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="#2d2f38" stroke-width="2" opacity="0.7"/>
+
+  <g filter="url(#softShadow)">
+    <!-- Letter 'F' — Electric Indigo -->
+    <path d="M 112 114 H 280 V 176 H 182 V 226 H 252 V 286 H 182 V 388 H 112 Z" fill="url(#fGrad)"/>
+
+    <!-- Letter 'd' — Crisp White with Clean Hollow Counter (No pupil/eye) -->
+    <path fill-rule="evenodd"
+          d="M 326 114 H 392 V 388 H 326 V 383 C 254 383 194 346 194 286 C 194 226 254 190 326 190 V 114 Z M 326 244 C 286 244 256 262 256 286 C 256 310 286 328 326 328 Z"
+          fill="#FFFFFF"/>
+
+    <!-- Wordmark FONTDECK -->
+    <text x="256" y="446"
+          text-anchor="middle"
+          fill="#FFFFFF"
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Inter', sans-serif"
+          font-weight="900"
+          font-size="32"
+          letter-spacing="5">FONTDECK</text>
+  </g>
+</svg>
